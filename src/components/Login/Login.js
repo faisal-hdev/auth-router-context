@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/UserContext";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
+  const nevigate = useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -16,6 +17,7 @@ const Login = () => {
         const user = result.user;
         console.log(user);
         form.reset();
+        nevigate("/");
       })
       .catch((error) => {
         console.error(error);
@@ -27,7 +29,7 @@ const Login = () => {
         className="hero min-h-screen bg-base-200"
         style={{
           backgroundImage:
-            "url(https://images.unsplash.com/photo-1700469339941-0768a5365344?q=80&w=1506&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+            "url(https://images.unsplash.com/photo-1698778574131-e09795b36008?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
         }}
       >
         <div className="hero-content flex-col">

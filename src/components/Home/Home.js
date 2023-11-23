@@ -9,7 +9,7 @@ const Home = () => {
         className="hero min-h-screen"
         style={{
           backgroundImage:
-            "url(https://images.unsplash.com/photo-1700469339941-0768a5365344?q=80&w=1506&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+            "url(https://images.unsplash.com/photo-1698778574131-e09795b36008?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
         }}
       >
         <div className="hero-overlay bg-opacity-10"></div>
